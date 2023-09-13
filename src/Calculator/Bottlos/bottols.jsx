@@ -15,7 +15,7 @@ const Bottols = () => {
     }, []); 
 
     useEffect(() => {
-        if(bottols.length > 0){
+        if(bottols.length){
             const soterCart = inputData();
             const savecart = [];
             for(const id of soterCart){
@@ -44,8 +44,9 @@ const Bottols = () => {
     return (
         <div>
             <h3>Bottles {bottols.length}</h3>
+            <h3>Cart {order.length}</h3>
             <Cart cart={order} handleremovefromcart={handleremovefromcart}></Cart>
-            <div className="bottols" >
+            <div className="bottols">
                 {
                     bottols.map(bottole => <Bottol 
                         key={bottole.id}

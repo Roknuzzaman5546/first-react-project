@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import './Bottols.css'
 const Cart = ({cart, handleremovefromcart}) => {
+    console.log(cart)
     return (
         <div>
             <h3>cart: {cart.length}</h3>
