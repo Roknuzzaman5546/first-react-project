@@ -1,0 +1,14 @@
+.bottols{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+.cart-container{
+    border: 1px solid skyblue;
+    padding: 5px ;
+    border-radius: 7px;
+}
+.cart-container img{
+    width: 100px;
+}
